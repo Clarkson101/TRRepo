@@ -37969,7 +37969,7 @@ MonoBehaviour:
   amountOfActiveTargets: 4
   activeMat: {fileID: 2100000, guid: 88b8244aa761e734695604df71bfa5e7, type: 2}
   inactiveMat: {fileID: 2100000, guid: d5d4cfa7d102c214485a18a3fe24bbe9, type: 2}
-  debugCube: {fileID: 1862239820}
+  disableAutoSearch: 0
 --- !u!43 &2090646802
 Mesh:
   m_ObjectHideFlags: 0
@@ -39993,6 +39993,14 @@ PrefabInstance:
     - target: {fileID: 9104481551704319567, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104481552123197891, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
+      propertyPath: sensitivityX
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104481552123197891, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
+      propertyPath: sensitivityY
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
