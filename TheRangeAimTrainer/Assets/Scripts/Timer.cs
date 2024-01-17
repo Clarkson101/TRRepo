@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float timerDuration = 60f;
+    public float timerDuration = 45f;
     private float timer;
     public Text timerText;
 
