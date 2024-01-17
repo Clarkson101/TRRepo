@@ -4433,7 +4433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8be3648281a6944abaf84727a91b379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerDuration: 60
+  timerDuration: 45
   timerText: {fileID: 1348740941}
 --- !u!4 &334852894
 Transform:

@@ -43,6 +43,7 @@ public class Timer : MonoBehaviour
 
     void LoadNextScene()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("ScoreScreen");
     }
 }
