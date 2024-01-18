@@ -15,6 +15,7 @@ public class TargetShooting : MonoBehaviour
     [SerializeField] private Material activeMat;
     [SerializeField] private Material inactiveMat;
     private List<GameObject> activeTargets = new List<GameObject>();
+    [SerializeField] private LevelScore scoreComponent;
 
     public bool disableAutoSearch = false;
 
@@ -62,6 +63,7 @@ public class TargetShooting : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             gunAnimator.PlayAnim();
+            scoreComponent.IncrementShotCount();
             
             if (Physics.Raycast(bulletRaycastOrigin.position, bulletRaycastOrigin.forward, out RaycastHit hitData, Mathf.Infinity, targetLayer)) //Hitreg shot
             {
@@ -95,6 +97,8 @@ public class TargetShooting : MonoBehaviour
         {
             if (hitData.collider.gameObject.GetInstanceID() == target.GetInstanceID())
             {
+                scoreComponent.IncrementScore();
+                
                 RollRandomTarget();
                 inactiveTargets.Add(target);
                 activeTargets.Remove(target);

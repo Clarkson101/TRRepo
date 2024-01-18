@@ -38,7 +38,7 @@ public class Timer : MonoBehaviour
     void UpdateTimerDisplay()
     {
         // Update your timer UI (Assuming you have a Text component for displaying the timer)
-        timerText.text = "Time: " + Mathf.Floor(timer / 60).ToString("00") + ":" + (timer % 60).ToString("00");
+        timerText.text = Mathf.Floor(timer / 60).ToString("00") + ":" + (timer % 60).ToString("00");
     }
 
     void LoadNextScene()
