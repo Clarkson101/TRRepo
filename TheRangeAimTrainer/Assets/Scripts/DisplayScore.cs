@@ -20,7 +20,6 @@ public class DisplayScore : MonoBehaviour
         if (scoreComponent != null)
         {
             scoreText.text = "Score: " + scoreComponent.score;
-            Debug.Log(scoreComponent.score / scoreComponent.amountOfShots);
             accuracyText.text = "Accuracy: " + scoreComponent.accuracyPercent + '%';
 
             scoreComponent.transform.parent = gameObject.transform;
