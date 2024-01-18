@@ -5,6 +5,7 @@ using UnityEngine;
 public class TargetShooting : MonoBehaviour
 {
     public Transform bulletRaycastOrigin;
+    private PlayAnimation gunAnimator;
     public float fireRate = 0.5f; // Adjust the fire rate as desired
     private float nextFireTime = 0f;
 
@@ -16,6 +17,11 @@ public class TargetShooting : MonoBehaviour
     private List<GameObject> activeTargets = new List<GameObject>();
 
     public bool disableAutoSearch = false;
+
+    private void Awake()
+    {
+        gunAnimator = bulletRaycastOrigin.GetComponentInChildren<PlayAnimation>();
+    }
 
     private void Start()
     {
@@ -55,6 +61,8 @@ public class TargetShooting : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            gunAnimator.PlayAnim();
+            
             if (Physics.Raycast(bulletRaycastOrigin.position, bulletRaycastOrigin.forward, out RaycastHit hitData, Mathf.Infinity, targetLayer)) //Hitreg shot
             {
                 Debug.Log("Raycast success!");

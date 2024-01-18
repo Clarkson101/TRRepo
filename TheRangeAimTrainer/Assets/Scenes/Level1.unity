@@ -7836,6 +7836,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!4 &598956573 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6358613561010333351, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
+  m_PrefabInstance: {fileID: 9104481551493403160}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &602834713
 Mesh:
   m_ObjectHideFlags: 0
@@ -9905,11 +9910,6 @@ Transform:
   m_Father: {fileID: 250722887}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &784002007 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9104481552123197903, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
-  m_PrefabInstance: {fileID: 9104481551493403160}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &798084004
 GameObject:
   m_ObjectHideFlags: 0
@@ -33801,7 +33801,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!43 &1845264987
 Mesh:
@@ -38087,7 +38087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3beede0942af3f479085b0c31376aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletRaycastOrigin: {fileID: 784002007}
+  bulletRaycastOrigin: {fileID: 598956573}
   fireRate: 6
   targetLayer:
     serializedVersion: 2
@@ -39947,6 +39947,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 348104027}
+    - target: {fileID: 6134661964509071003, guid: bf85cc74589cd714d859a3bb9c2af76b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6134661964836685325, guid: bf85cc74589cd714d859a3bb9c2af76b, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -40065,6 +40069,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6358613560658508072, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -55.89
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358613560658508072, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358613560658508072, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.22
+      objectReference: {fileID: 0}
     - target: {fileID: 9104481551559217008, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
       propertyPath: m_Mesh
       value: 

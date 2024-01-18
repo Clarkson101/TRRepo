@@ -850,6 +850,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6358613560658508072, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -63.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358613560658508072, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358613560658508072, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -28.39
+      objectReference: {fileID: 0}
     - target: {fileID: 9104481551559217008, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4533,6 +4545,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!4 &1561774248 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6358613561010333351, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
+  m_PrefabInstance: {fileID: 219018289}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1613358773 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7963987790941658281, guid: eb0fd4df91dae464ba3374c47d5245f9, type: 3}
@@ -4592,7 +4609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3beede0942af3f479085b0c31376aba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletRaycastOrigin: {fileID: 2040177383}
+  bulletRaycastOrigin: {fileID: 1561774248}
   fireRate: 6
   targetLayer:
     serializedVersion: 2
@@ -5916,11 +5933,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!4 &2040177383 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9104481552123197903, guid: 79dd7e2fa0059004a88b121f92130f53, type: 3}
-  m_PrefabInstance: {fileID: 219018289}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2087709140 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4970310369859005251, guid: eb0fd4df91dae464ba3374c47d5245f9, type: 3}
