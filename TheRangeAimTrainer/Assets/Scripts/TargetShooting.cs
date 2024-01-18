@@ -91,15 +91,13 @@ public class TargetShooting : MonoBehaviour
 
     private void CheckHitTarget(RaycastHit hitData)
     {
-        GameObject targetToRemove = null;
-        
         foreach (GameObject target in activeTargets)
         {
             if (hitData.collider.gameObject.GetInstanceID() == target.GetInstanceID())
             {
                 RollRandomTarget();
                 inactiveTargets.Add(target);
-                activeTargets.Remove(targetToRemove);
+                activeTargets.Remove(target);
 
                 target.GetComponent<MeshRenderer>().material = inactiveMat;
                 return;
